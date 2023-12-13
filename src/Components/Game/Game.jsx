@@ -1,9 +1,15 @@
 import Button from "../Button/Button";
 import styled from "styled-components";
+import Rules from "../Rules/Rules";
+import { useState } from "react";
 
 const Game = ({ onClick, randomNumber, setScore }) => {
   const resetScore = () => {
     setScore(0);
+  };
+  const [rules, setRules] = useState(false);
+  const rulesVisible = () => {
+    setRules((prev) => !prev);
   };
   return (
     <>
@@ -22,9 +28,13 @@ const Game = ({ onClick, randomNumber, setScore }) => {
           ></Button>
         </Buttons>
         <Buttons>
-          <Button text={"Show Rules"}></Button>
+          <Button
+            onClick={rulesVisible}
+            text={rules ? "Hide Rules" : "Show Rules"}
+          ></Button>
         </Buttons>
       </div>
+      {rules && <Rules />}
     </>
   );
 };

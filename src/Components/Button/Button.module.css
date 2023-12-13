@@ -1,0 +1,16 @@
+.primary_btn{
+    background-color: black;
+    color: white;
+    border: 0;
+    min-width: 130px;
+    height: 30px;
+    font-size: 11px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all .5s;
+  }
+  .primary_btn:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid;
+  }

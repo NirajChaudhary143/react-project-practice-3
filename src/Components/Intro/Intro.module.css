@@ -1,0 +1,33 @@
+.game_intro_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+  }
+  .game_title h1{
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .btn{
+    display: flex;
+    justify-content: end;
+  }
+  @media screen and (max-width:900px){
+    .image-container img{
+      width: 300px;
+    }
+    .game-title h1{
+      font-size: 20px;
+      font-weight: 800;
+    }
+  }
+  @media screen and (max-width:600px){
+    .image_container img{
+      width: 200px;
+    }
+    .game_title h1{
+      font-size: 20px;
+      font-weight: 800;
+      margin: 0px;
+    }
+  }

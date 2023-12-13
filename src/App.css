@@ -67,6 +67,7 @@ margin-right: 10px;
 }
 .game_image_container img{
   width: 200px;
+  cursor: pointer;
 }
 .game_container p{
   font-weight: 600;

@@ -1,18 +1,23 @@
-import { useState } from "react";
 import styled from "styled-components";
 import "../../App.css";
 
-export default function NumberButton() {
+export default function NumberButton({
+  setError,
+  selectedNumber,
+  setSelectedNumber,
+}) {
   const arrNum = [1, 2, 3, 4, 5, 6];
-  const [selectedNumber, setSelectedNumber] = useState();
-  console.log(selectedNumber);
+  const setErrorHandler = (value) => {
+    setSelectedNumber(value);
+    setError("");
+  };
   return (
     <>
       {arrNum.map((value, index) => (
         <Buttons
           isSelected={selectedNumber === value}
           key={index}
-          onClick={() => setSelectedNumber(value)}
+          onClick={() => setErrorHandler(value)}
         >
           {value}
         </Buttons>

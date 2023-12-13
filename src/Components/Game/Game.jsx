@@ -1,10 +1,11 @@
 import Button from "../Button/Button";
 import styled from "styled-components";
-const Game = () => {
+
+const Game = ({ onClick, randomNumber }) => {
   return (
     <>
-      <div className="game_image_container">
-        <img src="/images/dice_1.png" alt="" />
+      <div className="game_image_container" onClick={onClick}>
+        <img src={`/images/dice_${randomNumber}.png`} alt="" />
       </div>
       <div>
         <p>Click on Dice to roll</p>

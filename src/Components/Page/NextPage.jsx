@@ -58,6 +58,7 @@ export default function NextPage() {
         </div>
         <div className="game_container">
           <Game
+            setScore={setScore}
             onClick={randomNumberHandler}
             randomNumber={randomNumber}
           ></Game>

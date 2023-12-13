@@ -1,7 +1,10 @@
 import Button from "../Button/Button";
 import styled from "styled-components";
 
-const Game = ({ onClick, randomNumber }) => {
+const Game = ({ onClick, randomNumber, setScore }) => {
+  const resetScore = () => {
+    setScore(0);
+  };
   return (
     <>
       <div className="game_image_container" onClick={onClick}>
@@ -12,7 +15,11 @@ const Game = ({ onClick, randomNumber }) => {
       </div>
       <div className="">
         <Buttons>
-          <Button borderLess={"true"} text={"Reset Score"}></Button>
+          <Button
+            onClick={resetScore}
+            borderLess={"true"}
+            text={"Reset Score"}
+          ></Button>
         </Buttons>
         <Buttons>
           <Button text={"Show Rules"}></Button>

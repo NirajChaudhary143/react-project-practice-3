@@ -4,8 +4,8 @@ body{
 }
 .container{
   width: 60vw;
-  margin:auto;
-  height: 100vh;
+  margin: auto;
+  height: 80vh;
 }
 .score_container{
   display: flex;
@@ -31,17 +31,13 @@ body{
   width: 100%;
   align-items: center;
 }
-.choose_number-container button{
+/* .choose_number-container button{
   margin: 0 10px;
   border: 1px solid black;
   background-color: transparent;
   padding: 15px;
   cursor: pointer;
-}
-.choose_number-container button.ative_btn{
-  background-color: black;
-  color: white;
-}
+} */
 .select_number{
   display: flex;
   justify-content: end;
@@ -60,6 +56,20 @@ margin-right: 10px;
 .error_msg span{
   font-size: 16px;
   color: red;
+}
+.game_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+  flex-direction: column;
+}
+.game_image_container img{
+  width: 200px;
+}
+.game_container p{
+  font-weight: 600;
 }
 
 

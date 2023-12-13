@@ -1,8 +1,10 @@
 import "../../App.css";
+import Game from "../Game/Game";
+import NumberButton from "../NumberButton/NumberButton";
 export default function NextPage() {
   return (
     <>
-      <div className="container">
+      <div className="container" style={{ marginTop: "45px" }}>
         <div className="error_msg">
           <span>You have not selected any number.</span>
         </div>
@@ -13,17 +15,15 @@ export default function NextPage() {
           </div>
           <div className="choose_number-container">
             <div>
-              <button className="ative_btn">1</button>
-              <button>2</button>
-              <button>3</button>
-              <button>4</button>
-              <button>5</button>
-              <button>6</button>
+              <NumberButton></NumberButton>
             </div>
             <div className="select_number">
               <p>Select Number</p>
             </div>
           </div>
+        </div>
+        <div className="game_container">
+          <Game></Game>
         </div>
       </div>
     </>

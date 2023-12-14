@@ -36,4 +36,13 @@ const Container = styled.div`
   ul li {
     font-size: 13px;
   }
+  @media screen and (max-width: 1000px) {
+    h1 {
+      font-size: 13px;
+    }
+    ul li {
+      font-size: 10px;
+    }
+    margin-top: 5px;
+  }
 `;

@@ -35,4 +35,10 @@ const Buttons = styled.button`
   font-weight: 600;
   background-color: ${(props) => (props.isSelected ? "black" : "white")};
   color: ${(props) => (props.isSelected ? "white" : "black")};
+
+  @media screen and (max-width: 700px) {
+    height: 20px;
+    width: 20px;
+    margin: 0 3px;
+  }
 `;
